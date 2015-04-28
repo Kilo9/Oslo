@@ -1,0 +1,12 @@
+TODOS:   
+
+11/30/12
+
+Tile mouse selection and torch placement
+
+
+fix lighting settings
+
+update all tile classes to be resource efficient
+
+

@@ -1,0 +1,3 @@
+HOME == -Djava.library.path="C:\Program Files\NetBeans 7.3 Beta\lwjgl-2.8.5\lwjgl-2.8.5\lwjgl-2.8.5\native\windows"
+
+SCHOOL == -Djava.library.path=H:\lwjgl-2.8.5\lwjgl-2.8.5\lwjgl-2.8.5\native\windows
