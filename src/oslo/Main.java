@@ -3,6 +3,7 @@ package oslo;
 import entity.Jonas;
 import level.Level;
 import level.Map;
+import java.io.File;
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.BasicGame;
 import org.newdawn.slick.GameContainer;
@@ -53,6 +54,10 @@ public class Main extends BasicGame
      */
     public static void main(String[] args) 
     {
+        System.setProperty("java.library.path", "libs");
+
+        System.setProperty("org.lwjgl.librarypath", new File("libs/natives").getAbsolutePath());
+
         try
         {
             gc = new AppGameContainer(new Main());
