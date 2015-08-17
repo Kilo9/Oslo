@@ -1,9 +1,9 @@
 package oslo;
 
 import entity.Jonas;
+import java.io.File;
 import level.Level;
 import level.Map;
-import java.io.File;
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.BasicGame;
 import org.newdawn.slick.GameContainer;
@@ -30,8 +30,8 @@ public class Main extends BasicGame
     public static final float XSCALE = 4.0f;
     public static final float YSCALE = 4.0f;
 
-    public static final String TILE_SHEET_PATH = "res/tex/texsheet.png";
-    public static final String SPRITE_SHEET_PATH = "res/sprites/spritesheet.png";
+    public static final String TILE_SHEET_PATH = "res/tex/TexSheet.png";
+    public static final String SPRITE_SHEET_PATH = "res/sprites/Spritesheet.png";
     
     public static SpriteSheet textureSheet;
     public static SpriteSheet spriteSheet;
@@ -57,7 +57,6 @@ public class Main extends BasicGame
         System.setProperty("java.library.path", "libs");
 
         System.setProperty("org.lwjgl.librarypath", new File("libs/natives").getAbsolutePath());
-
         try
         {
             gc = new AppGameContainer(new Main());
