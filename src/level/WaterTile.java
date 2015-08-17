@@ -8,11 +8,11 @@ import oslo.Main;
  *
  * @author Jeremy Bassi
  */
-public class WaterTile extends AnimationTile
+public class WaterTile extends Tile
 {
     public static final int DURATION = 400;
     
-    private static Animation anim = new Animation(new Image[] {Main.textureSheet.getSprite(3, 0), Main.textureSheet.getSprite(4, 0)}, DURATION, false);
+    private static Animation anim = new Animation(new Image[] {Main.textureSheet.getSprite(5, 0), Main.textureSheet.getSprite(6, 0)}, DURATION, true);
     
     public WaterTile()
     {
@@ -26,15 +26,15 @@ public class WaterTile extends AnimationTile
     }
 
     @Override
-    public void update(int delta) 
+    public void render(float x, float y) 
     {
-        anim.update(delta);
+        anim.draw(x, y);
     }
 
     @Override
-    public void render(float x, float y) 
+    public Image getImage()
     {
-        anim.draw((int) x,(int) y);
+        return anim.getCurrentFrame();
     }
     
 }

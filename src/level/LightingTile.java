@@ -11,7 +11,7 @@ public class LightingTile extends Tile
 {   
     private float alpha;
     
-    private static Image image = Main.textureSheet.getSprite(5, 0);
+    private static Image image = Main.textureSheet.getSprite(7, 0);
     
     public LightingTile()
     {
@@ -29,7 +29,7 @@ public class LightingTile extends Tile
     {
         Image tile = image.copy();
         tile.setAlpha(a);
-        tile.draw((int) x, (int) y);
+        tile.draw(x, y);
     }
     
     public void setAlpha(float alpha)
@@ -46,5 +46,11 @@ public class LightingTile extends Tile
     public boolean canPass() 
     {
         return true;
+    }
+
+    @Override
+    public Image getImage()
+    {
+        return image;
     }
 }

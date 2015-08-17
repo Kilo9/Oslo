@@ -13,11 +13,6 @@ import oslo.Main;
  */
 public abstract class Tile 
 {
-    public static Tile grassTile = new GrassTile();
-    public static AnimationTile waterTile = new WaterTile();
-    public static Tile dirtTile = new DirtTile();
-    public static Tile rockTile = new RockTile();
-
     private String name;
    
     public Tile(String name)
@@ -27,7 +22,13 @@ public abstract class Tile
     
     public abstract void render(float x, float y);
     
+    /**
+     * Tells whether the entity can move onto the tile
+     * @return can pass through
+     */
     public abstract boolean canPass();
+    
+    public abstract Image getImage();
     
     /**
      * utility method to get textures from the sheet

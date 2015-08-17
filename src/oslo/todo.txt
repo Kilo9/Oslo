@@ -1,12 +1,7 @@
-TODOS:   
+3/19/13
 
-11/30/12
-
-Tile mouse selection and torch placement
-
-
-fix lighting settings
-
-update all tile classes to be resource efficient
+Problem with movement:
+    -arrow keys:
+    -stops down l r but |not| up l r
 
 

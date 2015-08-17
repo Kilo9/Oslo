@@ -1,0 +1,13 @@
+4    hi there!
+6    Velkommen to oslo
+8    the capital of norway!
+12   take a moment to enjoy the scenery
+15   see what you can find
+17   but do you see that bar?
+19   at the bottom?
+21   don't let it fill up!
+23   it does so when you are exposed
+25   when the guardians can see you
+27   anyways
+30   good luck and enjoy your stay...
+33   {done} 

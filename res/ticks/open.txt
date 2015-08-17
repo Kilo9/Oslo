@@ -1,0 +1,15 @@
+3    heisann
+5    Velkommen to oslo
+7    oslo is in norway, of course
+9    take a moment to enjoy the scenery
+12   it took long enough to make :)
+15   see what you can find
+17   but do you see that bar?
+19   at the bottom?
+21   don't let it fill up!
+23   it does so when you are exposed
+25   when the guardians can see you
+27   anyways
+29   i guess i will leave you to it
+31   -J
+35   {done} 

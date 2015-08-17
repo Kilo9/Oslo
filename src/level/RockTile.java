@@ -13,7 +13,7 @@ import oslo.Main;
  */
 public class RockTile extends Tile
 {
-    private static Image img = Main.textureSheet.getSprite(2, 0);
+    private static Image img = Main.textureSheet.getSprite(4, 0);
     
     public RockTile()
     {
@@ -23,12 +23,18 @@ public class RockTile extends Tile
     @Override
     public void render(float x, float y) 
     {
-        img.draw((int) x, (int) y);
+        img.draw(x, y);
     }
 
     @Override
     public boolean canPass() 
     {
         return false;
+    }
+
+    @Override
+    public Image getImage()
+    {
+        return img;
     }
 }

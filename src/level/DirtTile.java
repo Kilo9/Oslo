@@ -4,7 +4,7 @@
  */
 package level;
 
-import level.Tile;
+import org.newdawn.slick.Image;
 import oslo.Main;
 
 /**
@@ -13,6 +13,8 @@ import oslo.Main;
  */
 public class DirtTile extends Tile
 {
+    private static Image img = Main.textureSheet.getSprite(3, 0);
+    
     public DirtTile()
     {
         super("Dirt");
@@ -21,12 +23,18 @@ public class DirtTile extends Tile
     @Override
     public void render(float x, float y) 
     {
-        Main.textureSheet.getSprite(1, 0).draw((int) x, (int) y);
+        img.draw(x, y);
     }
 
     @Override
     public boolean canPass() 
     {
         return true;
+    }
+
+    @Override
+    public Image getImage()
+    {
+        return img;
     }
 }
